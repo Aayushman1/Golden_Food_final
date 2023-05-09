@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Golden Food</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="icon" href="Images/foodicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="main.js"></script>
+    <!--BOOTSTRAP (*forget it*)-->
+  </head>
+  <body id="log-bg">
+    <div id="login-box">
+      <form id="log-input" action="login.php" method="post">
+        <center>
+          <img src="Images/food-header.png" width="90%" />
+          <h1 style="color: blue; font-family: 'Exo 2', sans-serif">
+            Personal-Login
+          </h1>
+          <input
+            id="password"
+            type="password"
+            placeholder="Passwort"
+            name="password"
+            required
+          />
+          <h4
+            style="color: blue; text-decoration: underline; cursor: pointer"
+            onclick="alert('Kontaktiere: aayushmansinha09@gmail.com')"
+          >
+            Passwort vergessen?
+          </h4>
+          <!--Styling von Passwort vergessen-->
+          <!--system.js kickOut() - Check!!!-->
+          <div>
+            <!--<input type="submit" value="Login" />-->
+            <!--<button id="login-button" onclick="login()">Login</button>-->
+            <button id="login-button" type="submit">Login</button>
+          </div>
+        </center>
+      </form>
+    </div>
+  </body>
+</html>

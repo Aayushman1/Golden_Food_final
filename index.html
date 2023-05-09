@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Golden Food</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="description" content="Die Homepage der RSSB-Mensa" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="Images/foodicon.png" type="image/x-icon" />
+    <!--Importet Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js"></script>
+    <!--Swiper-Styles-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <section id="sec-nav">
+      <nav class="header">
+        <img
+          class="logo"
+          src="Images/food-header.png"
+          width="30%"
+          onclick="change1()"
+        />
+        <div class="mobile">
+          <div id="menu">
+            <img src="Images/drop-icon.png" id="dropdown" width="10%" />
+            <ul id="drop-list">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.steinerschule-basel.ch/mittagstisch-2/"
+                  >INFO</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://www.steinerschule-basel.ch/"
+                  >SCHULE</a
+                >
+              </li>
+              <li onclick="window.location='location.html'">STANDORT</li>
+            </ul>
+          </div>
+          <img
+            src="Images/personal-icon.png"
+            width="6%"
+            id="per-icon"
+            onclick="change2()"
+          />
+        </div>
+        <div class="follow">
+          <a
+            target="_blank"
+            href="https://www.steinerschule-basel.ch/mittagstisch-2/"
+            >INFO</a
+          >
+          <a target="_blank" href="https://www.steinerschule-basel.ch/"
+            >SCHULE</a
+          >
+          <a href="location.html">STANDORT</a>
+          <div class="login" onclick="change2()">
+            PERSONAL <img src="Images/arrow.png" width="5%" />
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section id="sec-slider">
+      <img id="ipad-img" src="Camera/title4.JPG" />
+      <center>
+        <div class="index" style="margin-top: 1%">
+          <!--<h1 style="opacity: 20%">~ image ~</h1>-->
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="Camera/title5.JPG"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="Camera/title4.JPG"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="Camera/title1.JPG"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="Camera/title3.JPG"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="Camera/title2.JPG"/>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+          const swiper = new Swiper(".swiper", {
+            autoplay: {
+              delay: 5000,
+              disableOnInteraction: false,
+            },
+            // Optional parameters
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+              el: ".swiper-scrollbar",
+            },
+          });
+        </script>
+      </center>
+    </section>
+    <section id="sec-input">
+      <br />
+      <br />
+      <hr />
+      <center style="margin-top: 2%">
+        <h1 style="font-family: 'Michroma', sans-serif">
+          Willkommen zu Golden Food
+        </h1>
+        <br />
+        <h2 class="home-txt" style="font-family: 'Michroma', sans-serif">
+          Die Nummer eins, für geplantes Essen in der Rudolf Steiner Schule
+          Mensa.
+        </h2>
+        <br />
+        <br />
+        <br />
+        <br />
+      </center>
+      <div class="box" style="margin-bottom: 8%">
+        <img
+          src="Images/koch.png"
+          alt="Koch"
+          style="width: 20%"
+          onclick="change3()"
+        />
+        <img
+          src="Images/menu.png"
+          onclick="window.location='menu.html'"
+          style="width: 20%"
+        />
+        <img
+          src="Images/znüni.png"
+          alt="Special"
+          onclick="window.location='znüni.html'"
+          style="width: 20%"
+        />
+      </div>
+      <hr />
+      <div class="home-content" style="margin-top: 5%">
+        <img class="es" src="Images/essen.JPG" width="60%" />
+        <div style="padding: 2%">
+          <center>
+            <h2 class="home-txt1">
+              Esse mit Platz und Komfort.<br />Geniesse deine Mahlzeit<br />
+              bei uns frisch zubereitet.
+            </h2>
+            <img class="dec" src="Images/decoration.png" width="40%" />
+          </center>
+        </div>
+      </div>
+      <div class="home-content">
+        <img class="es" src="Camera/küche1.JPG" width="60%" />
+        <div style="padding: 2%">
+          <center>
+            <h2 class="home-txt1">
+              Bei uns werden nur<br />
+              Bio-Lebensmittel verarbeitet,<br />
+              sodass man beim Essen<br />
+              der Natur möglichst nah ist.
+            </h2>
+            <img class="dec" src="Images/decoration.png" width="40%" />
+          </center>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

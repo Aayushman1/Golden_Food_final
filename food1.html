@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="Images/foodicon.png" type="image/x-icon" />
+    <script src="main.js"></script>
+    <title>Golden Food - Admin</title>
+  </head>
+  <body>
+    <nav id="admin-head">
+      <div id="logo-img">
+        <img src="Images/admin-logo.png" width="100%"/>
+      </div>
+    </nav>
+    <center>
+      <br>
+      <form id="form1" action="food1.php" method="post">
+        <div class="td">
+          <img src="Images/mo.png">
+          <input id="food1" type="text" placeholder="Name" name="mon1" required/>
+          <input type="text" placeholder="Preis" name="m1" required>
+        </div>
+        <div class="td">
+          <img src="Images/di.png">
+          <input id="food2" type="text" placeholder="Name" name="tue1" required />
+          <input type="text" placeholder="Preis" name="t1" required>
+        </div>
+        <div class="td">
+          <img src="Images/mi.png">
+          <input id="food3" type="text" placeholder="Name" name="wed1" required />
+          <input type="text" placeholder="Preis" name="w1" required>
+        </div>
+        <div class="td">
+          <img src="Images/do.png">
+          <input type="text" placeholder="Name" name="thu1" required />
+          <input type="text" placeholder="Preis" name="th1" required>
+        </div>
+        <div class="td">
+          <img src="Images/fr.png">
+          <input type="text" placeholder="Name" name="fri1" required />
+          <input type="text" placeholder="Preis" name="f1" required>
+        </div>
+        <br />
+        <input id="button" type="submit" name="submit" value="GO!" />
+      </form>
+      <button class="b1" onclick="window.location='admin.html'">
+        ADMIN-Homepage
+      </button>
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--<script src="food1.js"></script>-->
+  </body>
+  <!--<div id="logout">
+        <button onclick="logout()">Logout</button>
+      </div>-->
+</html>

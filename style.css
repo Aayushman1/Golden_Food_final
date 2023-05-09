@@ -1,0 +1,533 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+/*font-family: 'Exo 2', sans-serif;*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: calibri;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+.box img {
+  border-radius: 3%;
+  width: 25%;
+}
+.box :hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 1s;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: none;
+  position: relative;
+  /*box-shadow: 0px 2px 10px black;*/
+}
+.follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header a {
+  margin-right: 10%;
+  color: rgb(124, 107, 12);
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  font-size: 150%;
+}
+.header a:hover {
+  text-decoration: overline;
+}
+.login {
+  font-size: 140%;
+  border: solid;
+  padding: 2%;
+  border-radius: 20%;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+.login:hover {
+  opacity: 50%;
+}
+.logo {
+  cursor: pointer;
+}
+.map {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 5%;
+}
+.map iframe {
+  border-radius: 2%;
+  width: 45%;
+  height: 55vh;
+}
+.heading {
+  text-transform: uppercase;
+  font-size: 200%;
+}
+.location-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.header-txt {
+  font-family: "Michroma", sans-serif;
+}
+.header-txt1 {
+  font-family: "Michroma", sans-serif;
+}
+.location-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+.location-list li {
+  padding: 4%;
+}
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10%;
+  background-color: gold;
+}
+.swiper {
+  width: 100%;
+  height: fit-content;
+  padding-left: 10%;
+  padding-right: 20%;
+  background-color: white;
+}
+.swiper-slide img {
+  width: 60%;
+}
+.cook {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+.cook1 img {
+  border: solid;
+  object-fit: cover;
+}
+.cook1 {
+  text-align: center;
+  object-position: center;
+  padding: 2%;
+  height: 48vh;
+}
+#login-box {
+  /*to get input in center*/
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: white;
+  border-radius: 10%;
+  width: 400px;
+  height: 600px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.325);
+  padding: 3%;
+  /* bring your own prefixes */
+}
+#log-bg {
+  background-image: url(Images/login-bg.jpg);
+}
+.home-txt1{
+  font-family: 'Montserrat', sans-serif; font-size: 30px
+}
+#log-input {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#log-input input {
+  width: 90%;
+  padding: 3%;
+  font-size: 120%;
+  font-family: sans-serif;
+}
+
+#login-button {
+  margin: 10%auto;
+  padding: 5%;
+  cursor: pointer;
+  width: 50%;
+  font-size: 140%;
+  font-family: "Exo 2", sans-serif;
+  border-radius: 20%;
+  border: none;
+  background-color: blue;
+  color: white;
+}
+#login-button:hover {
+  background-color: rgb(26, 133, 239);
+  transition: 0.5s;
+}
+#password {
+  margin: 5%auto;
+}
+#admin-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+#logo-img {
+  margin: auto;
+}
+#feed-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+.feed-box img {
+  width: 40%;
+  padding: 3%;
+}
+.feed-box {
+  border: solid;
+  border-width: 1px;
+  border-color: gray;
+  padding: 1%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.feed-box:hover {
+  border-color: blue;
+  box-shadow: 10px 10px 10px gray;
+}
+#feed-znüni {
+  border: solid;
+  border-radius: 10px;
+  margin: auto;
+  width: 60%;
+  font-size: 180%;
+  padding: 1%;
+  box-sizing: border-box;
+}
+#feed-znüni form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#znüni-file {
+  font-size: 90%;
+  background-color: white;
+}
+#btn1 {
+  font-size: 90%;
+  cursor: pointer;
+}
+#go-back {
+  margin-top: 5%;
+}
+#go-back button {
+  cursor: pointer;
+  font-size: 150%;
+  padding: 1%;
+  background-color: white;
+  border-radius: 10px;
+  color: blue;
+}
+#go-back button:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+.sp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  font-size: 150%;
+}
+.speisen {
+  margin-top: 5%;
+}
+#button {
+  font-size: 180%;
+  padding: 1%;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 8%;
+}
+#contain {
+  margin-top: 5%;
+}
+#contain img {
+  width: 50%;
+}
+.b1 {
+  cursor: pointer;
+  font-size: 150%;
+  padding: 1%;
+  background-color: white;
+  border-radius: 10px;
+  color: red;
+  margin-top: 3%;
+}
+.b1:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+#btn1 {
+  padding: 1%;
+}
+#ipad-img{
+  display: none;
+}
+/*--------------------------------------------------------------------------*/
+/*Alles für handy-Format*/
+#dropdown {
+  display: block;
+}
+#menu ul{
+  display: none;
+}
+#menu ul li a{
+  font-size: 24px;
+  color: gold;
+  text-decoration: none;
+}
+#drop-list {
+  display: none;
+  min-width: 100px;
+  font-size: 28px;
+  position: absolute;
+  list-style: none;
+  color: gold;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid;
+  border-width: 1px;
+}
+#drop-list li{
+  padding: 8px 8px;
+}
+#dropdown{
+  display: none;
+  width: 60px;
+  margin-right: 30px;
+}
+#per-icon {
+  display: none;
+}
+#map1{
+  display: none;
+}
+.cook5{
+  display: none;
+}
+/*-------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1240px), (max-height: 540px) {
+  #login-box {
+    height: 750px;
+    width: 500px;
+  }
+  #password{
+    border-width: 1px;
+  }
+}
+/*-------------------------------------------------------------------------*/
+/*Broad Mobile Mode*/
+
+@media screen and (max-width: 540px){
+  #login-box{
+    width:400px;
+    height: 600px;
+  }
+  #znüni-div{
+    font-size: 20px;
+    padding: 5px;
+  }
+  .o1{
+    font-size: 20px;
+  }
+  #feed-div{
+    display: block;
+    margin-top: 0px;
+  }
+  .feed-box{
+    margin: auto;
+    margin-top: 40px;
+  }
+}
+/*--------------------------------------------------------------------------*/
+/*Tablet Mode*/
+
+@media screen and (max-width: 1240px) {
+  .follow {
+    display: none;
+  }
+  #dropdown{
+    display: flex;
+    width: 80px;
+    margin-right: 30px;
+  }
+  #menu:hover ul{
+    display:block;
+  } 
+  #menu:hover img{
+    border: solid;
+    border-radius: 10px;
+  }
+  #menu ul li:hover{
+    background-color: rgb(255, 249, 217);
+  }
+  .logo{
+    width: 400px;
+  }
+  #per-icon{
+    display: flex;
+    width: 80px;
+  }
+  nav{
+    display: inline-block;
+  }
+  .mobile{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+  }
+  .index{
+    display: none;
+  }
+  #ipad-img{
+    margin-top: 15px;
+    display: block;
+    max-width: 100%;
+  }
+  .home-content{
+    display: block;
+    justify-content: none;
+  }
+  .es{
+    width: 100%;
+  }
+  .cook{
+    display: block;
+  }
+  .cook1 img{
+    position: center;
+    width: 600px;
+    height: 650px;
+  }
+  .cook1{
+    margin-top: 200px;
+    font-size: larger;
+  }
+  .m1{
+    font-size: 25px;
+  }
+  .sp{
+    font-size: 20px;
+  }
+  .index1 img{
+    width: 100%;
+  }
+  .header-txt{
+    font-size: 28px;
+  }
+  .header-txt1{
+    font-size: 20px;
+  }
+  #t1{
+    font-size: 20px;
+  }
+  #l1{
+    font-size: 20px;
+  }
+  .map{
+    display: none;
+  }
+  #map1{
+    display: block;
+  }
+  #map1 iframe{
+    width:88%;
+    margin-top: 40px;
+    border-radius: 10px;
+  }
+  #map1 img{
+    width: 88%;
+    margin-top: 40px;
+  }
+  .location-img{
+    display: block;
+    justify-content: none;
+    align-items: normal;
+  }
+  .location-img img{
+    width: 100%;
+  }
+  .location-img li{
+    padding: 20px;
+    font-size: 30px;
+  }
+  .location-img ul{
+    padding: 6%;
+  }
+  .feed-box{
+    width: 300px;
+  }
+  #feed-znüni{
+    width: 90%;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 540px){
+  #dropdown{
+    width: 50px;
+  }
+  #per-icon{
+    width: 50px;
+  }
+  .logo{
+    width:320px;
+  }
+  .home-txt{
+    font-size: 95%;
+  }
+  .home-txt1{
+   font-size: 25px;
+  }
+}
+
+/*Später brauchbar*/
+/*      <h2 style="font-family: 'Rubik Bubbles', cursive">Folge uns:</h2>
+        <img
+          src="Images/instagram.png"
+          alt="Instagram"
+          style="width: 10%; cursor: pointer; margin-left:10%"
+        />*/
+
+/*https://www.youtube.com/watch?v=rD2Tnc-W31A*/
+/*https://www.steinerschule-basel.ch/bauvorhaben/*/

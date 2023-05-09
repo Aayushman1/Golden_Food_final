@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Golden Food</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="icon" href="Images/foodicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js"></script>
+    <!--BOOTSTRAP (*forget it*)-->
+  </head>
+  <body>
+    <section id="sec-nav">
+      <nav class="header">
+        <img
+          class="logo"
+          src="Images/food-header.png"
+          width="30%"
+          onclick="change1()"
+        />
+        <div class="mobile">
+          <div id="menu">
+            <img src="Images/drop-icon.png" id="dropdown" width="10%" />
+            <ul id="drop-list">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.steinerschule-basel.ch/mittagstisch-2/"
+                  >INFO</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://www.steinerschule-basel.ch/"
+                  >SCHULE</a
+                >
+              </li>
+              <li onclick="window.location='location.html'">STANDORT</li>
+            </ul>
+          </div>
+          <img
+            src="Images/personal-icon.png"
+            width="6%"
+            id="per-icon"
+            onclick="window.location='loginScreen.html'"
+          />
+        </div>
+        <div class="follow">
+          <a
+            target="_blank"
+            href="https://www.steinerschule-basel.ch/mittagstisch-2/"
+            >INFO</a
+          >
+          <a target="_blank" href="https://www.steinerschule-basel.ch/"
+            >SCHULE</a
+          >
+          <a href="location.html">STANDORT</a>
+          <div class="login" onclick="change2()">
+            PERSONAL <img src="Images/arrow.png" width="5%" />
+          </div>
+        </div>
+      </nav>
+    </section>
+    <center>
+      <div class="index1" style="margin-top: 1%">
+        <img src="Images/schule.jpg" alt="Schule" />
+        <hr style="margin-top: 10%" />
+      </div>
+      <br />
+      <br />
+      <h1 class="header-txt">
+        Die Mensa ist bei uns, die eine Energiequelle für unseren Alltag in der
+        Schule.
+      </h1>
+      <br />
+      <h2 id="l1" style="font-family: 'Michroma', sans-serif">
+        Wir haben ausschliesslich Lebensmittel in Bio Qualität
+      </h2>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2007.0042759704284!2d7.5997329656955275!3d47.532892187909354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b83e48018fe7%3A0x375718fb129396e9!2sRudolf%20Steiner%20Schule%20Basel!5e1!3m2!1sde!2sch!4v1670157482532!5m2!1sde!2sch"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <img
+          src="Images/mensa.jpg"
+          alt=""
+          width="50%"
+          style="border-radius: 2%; object-fit: cover"
+        />
+      </div>
+      <div id="map1">
+        <img
+          src="Images/mensa.jpg"
+          alt=""
+          width="50%"
+          style="border-radius: 2%; object-fit: cover"
+        />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2007.0042759704284!2d7.5997329656955275!3d47.532892187909354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b83e48018fe7%3A0x375718fb129396e9!2sRudolf%20Steiner%20Schule%20Basel!5e1!3m2!1sde!2sch!4v1670157482532!5m2!1sde!2sch"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <div class="location-head">
+        <h1 class="header-txt1">In der Zukunft - Der Neubau der Mensa</h1>
+        <h1 id="t1">
+          Mehr dazu
+          <a
+            target="_blank"
+            href="https://www.steinerschule-basel.ch/news-2/spatenstich-17-maerz/"
+            >hier</a
+          >
+        </h1>
+      </div>
+    </center>
+    <div class="location-img">
+      <img src="Images/mensa-neu.jpg" alt="Neubau" width="60%" />
+      <ul class="location-list" style="font-size: 130%">
+        <li>Start des Neubaus: Donnerstag, 17. März 2022</li>
+        <li>Ende des Neubaus: Spätestens im Jahr 2024/25</li>
+        <li>Expansion der Turnhalle</li>
+        <li>Neuer Gemeinschaftsraum</li>
+        <li>Neue Klassenräume</li>
+        <li>Neuer Pausenhof</li>
+        <li>Neue Kochunterrichtsräume</li>
+      </ul>
+    </div>
+    <br />
+    <br />
+    <br />
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Images/foodicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+      rel="stylesheet"
+    />
+    <title>Golden Food - Admin</title>
+  </head>
+  <body>
+    <nav id="admin-head">
+      <div id="logo-img">
+        <img src="Images/admin-logo.png" width="100%"/>
+      </div>
+    </nav>
+
+    <center>
+      <h2 class="o1" style="font-family: 'Michroma', sans-serif; margin-top: 5%; padding:20px;">
+        Willkommen Administrator,<br> jede Änderung die du hier ausübst werden
+        direkt auf der Hauptseite übertragen.
+      </h2>
+    </center>
+    <div id="feed-div">
+      <div class="feed-box" onclick="window.location='food1.html'">
+        <div>
+          <h1 style="font-family: cursive; color: blue">Menu</h1>
+          <h1 style="font-family: Calibri light">Aktuelle Woche</h1>
+        </div>
+        <hr />
+        <center>
+          <img src="Images/adm-food.png" />
+        </center>
+      </div>
+      <div class="feed-box" onclick="window.location='food2.html'">
+        <div>
+          <h1 style="font-family: cursive; color: blue">Menu</h1>
+          <h1 style="font-family: Calibri light">Folgende Woche</h1>
+        </div>
+        <hr />
+        <center>
+          <img src="Images/adm-food.png" />
+        </center>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div id="feed-znüni">
+      <div style="font-family: cursive">
+        <g style="font-family: cursive; color: blue">Menu </g>Znüni Dokument
+      </div>
+      <hr />
+      <form id="znüni-div">
+        <div id="file">
+          <label for="znüni-file" style="font-family: calibri">
+            Dokument wählen (Bild-Datei):
+          </label>
+          <input type="file" id="znüni-file" accept=".png,.jpg,.jpeg"/>
+        </div>
+        <div>
+          <input id="btn1" type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <center>
+      <div id="go-back">
+        <button onclick="window.location='index.html'">
+          ZURÜCK ZUR HOMEPAGE
+        </button>
+      </div>
+    </center>
+    <br />
+    <br />
+    <br />
+    <br />
+    <script src="admin.js"></script>
+  </body>
+</html>

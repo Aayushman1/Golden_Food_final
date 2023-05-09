@@ -1,0 +1,80 @@
+.td {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 200%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  align-items: start;
+}
+.td input {
+  width: 15%;
+  font-size:25px;
+}
+.td img{
+  width: 50px;
+}
+.fd-table th{
+  background-color: gold;
+  text-align: left;
+  padding:2px;
+  font-size: 25px;
+  border-collapse: collapse;
+}
+
+
+/*------------------------------------*/
+/*Responsive settings*/
+@media screen and (max-width: 540px){
+    .cook1 img{
+        width: 100px;
+        height: 500px;
+      }
+      .cook{
+        display: none;
+      }
+      .cook5{
+        display: block;
+      }
+      .cook2{
+        margin: auto;
+        margin-bottom: 40px;
+      }
+      .cook2 img{
+        object-fit: cover;
+        width: 400px;
+        height: 500px;
+        border: solid;
+      }
+      .sp{
+        font-size: 15px;
+      }
+      .m1{
+        font-size:20px;
+        margin-top: 50px;
+      }
+      #k1{
+        font-size: 25px;
+      }
+      #contain img{
+        width: 80%;
+      }
+      .td{
+        font-size: 25px;
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+      .td input{
+        width: 100px;
+      }
+      #button{
+        width: 70px;
+      }
+}
+@media screen and (max-width:414px) {
+  .header img{
+    width: 220px;
+  }
+  #menu img{
+    width:45px;
+  }
+}
