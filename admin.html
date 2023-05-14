@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="Images/foodicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -52,19 +53,19 @@
     <br>
     <br>
     <div id="feed-znüni">
-      <div style="font-family: cursive">
+      <div id="d2" style="font-family: cursive">
         <g style="font-family: cursive; color: blue">Menu </g>Znüni Dokument
       </div>
       <hr />
-      <form id="znüni-div">
+      <form id="znüni-div" action="upimg.php" method="post" enctype="multipart/form-data">
         <div id="file">
           <label for="znüni-file" style="font-family: calibri">
             Dokument wählen (Bild-Datei):
           </label>
-          <input type="file" id="znüni-file" accept=".png,.jpg,.jpeg"/>
+          <input type="file" id="znüni-file" accept=".png,.jpg,.jpeg" name="image"/>
         </div>
         <div>
-          <input id="btn1" type="submit" value="Submit" />
+          <input id="btn1" type="submit" name="submit" value="Submit" />
         </div>
       </form>
     </div>
@@ -79,6 +80,6 @@
     <br />
     <br />
     <br />
-    <script src="admin.js"></script>
+    <!--<script src="admin.js"></script>-->
   </body>
 </html>

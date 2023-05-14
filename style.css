@@ -128,12 +128,12 @@
 .cook1 img {
   border: solid;
   object-fit: cover;
+  width: 70%;
 }
 .cook1 {
   text-align: center;
   object-position: center;
   padding: 2%;
-  height: 48vh;
 }
 #login-box {
   /*to get input in center*/
@@ -264,11 +264,11 @@
   padding-left: 30%;
   padding-right: 30%;
   padding-bottom: 3%;
-  padding-top: 3%;
+  padding-top: 5%;
   font-size: 150%;
 }
-.speisen {
-  margin-top: 5%;
+.sp img{
+  width: 15%;
 }
 #button {
   font-size: 180%;
@@ -387,6 +387,12 @@
   .follow {
     display: none;
   }
+  nav{
+    width: 100%;
+  }
+  #contain img{
+    width: 90%;
+  }
   #dropdown{
     display: flex;
     width: 80px;
@@ -441,14 +447,21 @@
     height: 650px;
   }
   .cook1{
-    margin-top: 200px;
+    margin-top: 20px;
     font-size: larger;
   }
   .m1{
     font-size: 25px;
   }
   .sp{
-    font-size: 20px;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 3%;
+    padding-top: 5%;
+  }
+  .sp img{
+    width:70px;
   }
   .index1 img{
     width: 100%;

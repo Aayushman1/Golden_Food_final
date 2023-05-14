@@ -6,75 +6,133 @@
   margin-bottom: 5%;
   align-items: start;
 }
+
 .td input {
   width: 15%;
-  font-size:25px;
-}
-.td img{
-  width: 50px;
-}
-.fd-table th{
-  background-color: gold;
-  text-align: left;
-  padding:2px;
   font-size: 25px;
-  border-collapse: collapse;
 }
 
+.td img {
+  width: 50px;
+}
+
+.speisen {
+  margin-top: 5%;
+}
 
 /*------------------------------------*/
 /*Responsive settings*/
-@media screen and (max-width: 540px){
-    .cook1 img{
-        width: 100px;
-        height: 500px;
-      }
-      .cook{
-        display: none;
-      }
-      .cook5{
-        display: block;
-      }
-      .cook2{
-        margin: auto;
-        margin-bottom: 40px;
-      }
-      .cook2 img{
-        object-fit: cover;
-        width: 400px;
-        height: 500px;
-        border: solid;
-      }
-      .sp{
-        font-size: 15px;
-      }
-      .m1{
-        font-size:20px;
-        margin-top: 50px;
-      }
-      #k1{
-        font-size: 25px;
-      }
-      #contain img{
-        width: 80%;
-      }
-      .td{
-        font-size: 25px;
-        margin-left: 80px;
-        margin-right: 80px;
-      }
-      .td input{
-        width: 100px;
-      }
-      #button{
-        width: 70px;
-      }
+@media screen and (max-width: 540px) {
+  .cook1 img {
+    width: 100px;
+    height: 500px;
+  }
+
+  .cook {
+    display: none;
+  }
+
+  .cook5 {
+    display: block;
+  }
+
+  .cook2 {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .cook2 img {
+    object-fit: cover;
+    width: 400px;
+    height: 500px;
+    border: solid;
+  }
+
+  .sp {
+    font-size: 15px;
+  }
+
+  .m1 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  #k1 {
+    font-size: 25px;
+  }
+
+  #contain img {
+    width: 80%;
+  }
+
+  .td {
+    font-size: 25px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .td input {
+    width: 100px;
+  }
+
+  #button {
+    width: 70px;
+  }
 }
+
+@media screen and (max-width:710px) {
+  .cook1 img {
+    width: 70%;
+    height: 75vh;
+  }
+}
+
 @media screen and (max-width:414px) {
-  .header img{
+  .header img {
     width: 220px;
   }
-  #menu img{
-    width:45px;
+
+  #menu img {
+    width: 45px;
+  }
+  .td{
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+}
+
+@media screen and (max-width:670px) {
+  .logo {
+    width: 300px;
+  }
+
+  #dropdown {
+    width: 50px;
+  }
+
+  #per-icon {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width:495px) {
+  .logo {
+    width: 250px;
+  }
+
+  #dropdown {
+    width: 40px;
+  }
+  #d2{
+    font-size: 20px;
+  }
+  #per-icon {
+    width: 40px;
+  }
+  #znüni-div{
+    font-size:15px;
+  }
+  #btn1{
+    font-size: 15px;
   }
 }
